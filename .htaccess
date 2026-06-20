@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Public LexIA entrypoint.
+DirectoryIndex index.php index.html
+
+# Keep internal implementation files non-public.
+RewriteRule ^(config|core|tools)(/.*)?$ index.php [L]
+RewriteRule ^(app\.py|run\.sh|requirements\.txt|deploy_lexia\.py|PROJECT_STATE\.md|manuale-uso\.html)$ index.php [L]
+
+# Route the public SPA shell while preserving real files and directories.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]

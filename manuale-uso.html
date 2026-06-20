@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexIA | Manuale d'Uso</title>
+    <meta name="description" content="Manuale d'uso di LexIA con istruzioni complete per fascicoli, consulenza, documenti, suite investigativa e configurazione dei provider LLM.">
+    <meta name="author" content="Vincenzo Ricciardi">
+    <link rel="canonical" href="https://vincenzoricciardi.eu/LexIA/manuale-uso.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vincenzoricciardi.eu/LexIA/manuale-uso.html">
+    <meta property="og:title" content="LexIA | Manuale d'Uso">
+    <meta property="og:description" content="Istruzioni complete per usare LexIA: fascicoli, consulenza legale, documenti, strumenti investigativi e impostazioni LLM.">
+    <meta property="og:image" content="https://vincenzoricciardi.eu/LexIA/lexia-social-preview.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LexIA | Manuale d'Uso">
+    <meta name="twitter:description" content="Istruzioni complete per usare LexIA: fascicoli, consulenza legale, documenti, strumenti investigativi e impostazioni LLM.">
+    <meta name="twitter:image" content="https://vincenzoricciardi.eu/LexIA/lexia-social-preview.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#05080f;--panel:rgba(11,17,33,.78);--stroke:rgba(148,163,184,.14);
+            --text:#e2e8f0;--muted:#94a3b8;--primary:#818cf8;--cyan:#22d3ee;--link:#f6c453;
+        }
+        *{box-sizing:border-box}
+        a:not(.btn){color:var(--link);text-decoration-color:rgba(246,196,83,.55);text-underline-offset:3px}
+        a:not(.btn):hover{color:#ffe08a;text-decoration-color:currentColor}
+        a:not(.btn):focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:3px}
+        body{margin:0;font-family:'Inter',system-ui,sans-serif;background:radial-gradient(circle at top left, rgba(129,140,248,.16), transparent 34%),radial-gradient(circle at top right, rgba(34,211,238,.10), transparent 28%),var(--bg);color:var(--text);line-height:1.65}
+        .wrap{max-width:1180px;margin:0 auto;padding:32px 20px 48px}
+        .hero{background:var(--panel);border:1px solid var(--stroke);border-radius:28px;padding:32px;backdrop-filter:blur(18px);box-shadow:0 28px 80px rgba(0,0,0,.36)}
+        .kicker{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.25);color:#c7d2fe;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+        h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,4vw,4rem);line-height:1.05;margin:18px 0 12px}
+        .lead{font-size:1.08rem;color:var(--muted);max-width:70ch}
+        .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+        .card{padding:20px;border-radius:20px;background:rgba(255,255,255,.03);border:1px solid var(--stroke)}
+        .card h2{margin:0 0 10px;font-size:1.18rem}
+        .card p,.card li{color:var(--muted);font-size:1rem}
+        .card ul{margin:0;padding-left:20px;display:grid;gap:8px}
+        .steps{display:grid;gap:14px}
+        .step{padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.03);border:1px solid var(--stroke)}
+        .step strong{color:var(--text)}
+        .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+        .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid transparent}
+        .btn-primary{background:linear-gradient(135deg,var(--primary),var(--cyan));color:#fff}
+        .btn-secondary{background:rgba(255,255,255,.04);border-color:var(--stroke);color:var(--text)}
+        .footer{margin-top:18px;color:var(--muted);font-size:.92rem;text-align:center}
+        @media (max-width: 900px){
+            .wrap{padding:18px}
+            .hero{padding:24px}
+            .grid{grid-template-columns:1fr}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section class="hero">
+            <div class="kicker">LexIA Manuale d'Uso</div>
+            <h1>Istruzioni complete per usare LexIA con metodo e chiarezza.</h1>
+            <p class="lead">Questa guida spiega come lavorare con i fascicoli, usare la consulenza legale, generare atti, sfruttare la suite investigativa e configurare i provider LLM in modo corretto.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h2>Panoramica rapida</h2>
+                    <ul>
+                        <li>Apri o crea un fascicolo dalla sezione Gestione Fascicoli.</li>
+                        <li>Carica documenti, note e materiali utili per costruire il contesto.</li>
+                        <li>Passa alla Consulenza Legale per le analisi del caso.</li>
+                        <li>Usa gli strumenti investigativi per audio, PEC, anagrafiche e testimoni.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Componenti principali</h2>
+                    <ul>
+                        <li><strong>Consulenza Legale:</strong> dialogo con il motore legale sul caso selezionato.</li>
+                        <li><strong>Redazione Atti:</strong> generazione di bozze per atti stragiudiziali e giudiziari.</li>
+                        <li><strong>Suite Investigativa:</strong> trascrizioni, ricerche PEC, verifiche e schede testimoni.</li>
+                        <li><strong>Impostazioni LLM:</strong> gestione provider, chiavi API e modelli.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top:18px">
+                <div class="card">
+                    <h2>Flusso consigliato</h2>
+                    <div class="steps">
+                        <div class="step"><strong>1. Fascicolo.</strong> Definisci titolo, assistito e fatti essenziali.</div>
+                        <div class="step"><strong>2. Contesto.</strong> Carica documenti, note e prove che aiutano l'analisi.</div>
+                        <div class="step"><strong>3. Consulenza.</strong> Chiedi al motore LexIA una strategia o un parere.</div>
+                        <div class="step"><strong>4. Produzione.</strong> Genera atti, schede e report utili al caso.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Buone pratiche</h2>
+                    <div class="steps">
+                        <div class="step">Mantieni i fascicoli ordinati e separa bene documenti, note e allegati.</div>
+                        <div class="step">Inserisci sempre contesto preciso: date, soggetti, scadenze e obiettivi.</div>
+                        <div class="step">Verifica il provider LLM attivo prima di lanciare analisi importanti.</div>
+                        <div class="step">Usa la suite investigativa per arricchire i casi con dati strutturati.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:18px">
+                <h2>Metodo della Consulenza Legale</h2>
+                <ul>
+                    <li><strong>Oggetto dell'analisi:</strong> LexIA lavora sul fascicolo attivo, usando la conversazione e i documenti che hai incluso esplicitamente nella consulenza.</li>
+                    <li><strong>Fonti prioritarie:</strong> privilegia Costituzione, diritto UE, codici e leggi speciali pertinenti.</li>
+                    <li><strong>Giurisprudenza:</strong> richiama soltanto pronunce verificabili; se un riferimento non è sufficientemente certo, descrive il principio senza inventare estremi.</li>
+                    <li><strong>Metodo:</strong> ricostruzione dei fatti, questioni giuridiche, norme applicabili, valutazione, azioni possibili, procedura, rischi e conclusione.</li>
+                </ul>
+            </div>
+
+            <div class="grid" style="margin-top:18px">
+                <div class="card">
+                    <h2>Provider LLM e API Key</h2>
+                    <ul>
+                        <li><strong>Come si inseriscono:</strong> vai su <em>Impostazioni LLM</em>, scegli il provider, incolla la chiave nel campo <em>API Key</em>, seleziona il modello e salva la configurazione.</li>
+                        <li><strong>Regola generale:</strong> usa una chiave per ogni provider che vuoi attivare. Se lasci il campo vuoto, quel provider resta non configurato.</li>
+                        <li><strong>Protezione dati:</strong> le chiavi restano nel browser o nel sistema locale configurato e vanno trattate come credenziali segrete.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Come ottenere le chiavi</h2>
+                    <ul>
+                        <li><strong>Gratis:</strong> scegli provider con piano free o componenti locali, poi genera la chiave dal portale ufficiale se disponibile.</li>
+                        <li><strong>A pagamento:</strong> attiva un piano commerciale sul portale del provider e crea la chiave nel pannello sviluppatori o API.</li>
+                        <li><strong>Locali:</strong> per Ollama e LM Studio in genere non serve una chiave cloud, ma va configurato l'endpoint locale corretto.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:18px">
+                <h2>Provider supportati in LexIA</h2>
+                <div class="steps">
+                    <div class="step"><strong>Google Gemini:</strong> vai su Google AI Studio, crea una nuova API key e usa eventualmente il piano gratuito disponibile oppure un piano a consumo se ti serve un utilizzo maggiore.</div>
+                    <div class="step"><strong>OpenAI GPT:</strong> crea la chiave dal portale sviluppatori OpenAI e associarla a un piano a consumo o a eventuali crediti disponibili nel tuo account.</div>
+                    <div class="step"><strong>Ollama (Local):</strong> soluzione locale, gratuita lato cloud; avvia il server Ollama sul tuo PC e inserisci l'URL locale nell'app.</div>
+                    <div class="step"><strong>LM Studio:</strong> soluzione locale simile a Ollama; avvia il server locale di LM Studio e configura la base URL corretta senza API key cloud.</div>
+                    <div class="step"><strong>GitHub Copilot:</strong> usa l'accesso Copilot disponibile per il tuo account GitHub; se il servizio o l'integrazione richiede chiavi o token specifici, recuperali dal pannello ufficiale dell'account.</div>
+                    <div class="step"><strong>OpenRouter:</strong> crea la chiave sul sito OpenRouter, dove puoi usare modelli free o a pagamento in base al modello scelto e al consumo del tuo account.</div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:18px">
+                <h2>Come ottenere l'AUTH_ID di IndicePA</h2>
+                <p>L'AUTH_ID è il codice personale richiesto da IndicePA per interrogare i servizi ufficiali di ricerca PEC. Non è una chiave di Google Gemini o di un altro provider AI.</p>
+                <div class="steps">
+                    <div class="step"><strong>1. Accedi al portale.</strong> Apri il sito ufficiale <a href="https://www.indicepa.gov.it/" target="_blank" rel="noopener noreferrer">www.indicepa.gov.it</a>.</div>
+                    <div class="step"><strong>2. Registrati.</strong> Entra nell'area dedicata all'<em>Utente pubblico</em> e completa la registrazione indicando una tua casella email valida.</div>
+                    <div class="step"><strong>3. Apri i Web Services Pubblici.</strong> Dopo l'accesso, cerca nel pannello personale la sezione <em>Web Services Pubblici</em>.</div>
+                    <div class="step"><strong>4. Richiedi il codice.</strong> Segui la procedura mostrata dal portale per abilitare i servizi e ottenere il tuo <strong>AUTH_ID</strong>. Il codice può essere visualizzato nel pannello o comunicato all'indirizzo email registrato.</div>
+                    <div class="step"><strong>5. Inseriscilo in LexIA.</strong> Apri <em>Suite Investigativa &gt; Cerca PEC</em>, incolla il codice nel campo <em>AUTH_ID IndicePA</em> e avvia la ricerca.</div>
+                    <div class="step"><strong>6. Utilizzi successivi.</strong> LexIA memorizza l'AUTH_ID esclusivamente nel browser del dispositivo utilizzato, così non è necessario reinserirlo ogni volta. Se cambi browser, computer o cancelli i dati del sito, dovrai inserirlo nuovamente.</div>
+                </div>
+                <p><strong>Attenzione:</strong> l'AUTH_ID è personale e non deve essere pubblicato o condiviso. IndicePA copre Pubbliche Amministrazioni e gestori di pubblici servizi. Per imprese e professionisti privati usa il pulsante dedicato in LexIA, che apre la <a href="https://www.inipec.gov.it/web/guest/cerca-pec" target="_blank" rel="noopener noreferrer">ricerca ufficiale INI-PEC</a>.</p>
+            </div>
+
+            <div class="card" style="margin-top:18px">
+                <h2>Ricerca PEC di imprese e professionisti con INI-PEC</h2>
+                <p>INI-PEC è l'indice nazionale ufficiale degli indirizzi PEC di imprese e professionisti. Questa ricerca è distinta da IndicePA e non richiede l'AUTH_ID.</p>
+                <div class="steps">
+                    <div class="step"><strong>1. Apri il servizio.</strong> In LexIA vai su <em>Suite Investigativa &gt; Cerca PEC</em> e premi <em>Cerca imprese e professionisti su INI-PEC</em>. Puoi anche aprire direttamente la <a href="https://www.inipec.gov.it/web/guest/cerca-pec" target="_blank" rel="noopener noreferrer">pagina ufficiale INI-PEC</a>.</div>
+                    <div class="step"><strong>2. Scegli la categoria.</strong> Seleziona la scheda <em>Professionisti</em> oppure <em>Imprese</em> in base al soggetto da cercare.</div>
+                    <div class="step"><strong>3. Cerca un professionista.</strong> Inserisci nome e cognome, codice fiscale, categoria professionale, provincia o numero di iscrizione all'ordine. Se conosci già la PEC, puoi usarla per risalire al professionista.</div>
+                    <div class="step"><strong>4. Cerca un'impresa.</strong> Inserisci la denominazione, il codice fiscale o gli altri dati richiesti dal portale per restringere i risultati.</div>
+                    <div class="step"><strong>5. Completa la verifica.</strong> Esegui l'eventuale controllo di sicurezza mostrato dal sito e avvia la ricerca. La consultazione e i risultati restano sul portale ufficiale INI-PEC.</div>
+                </div>
+                <p><strong>Quale servizio usare:</strong> IndicePA per Pubbliche Amministrazioni e gestori di pubblici servizi; INI-PEC per imprese e professionisti iscritti nei rispettivi registri.</p>
+            </div>
+
+            <div class="grid" style="margin-top:18px">
+                <div class="card">
+                    <h2>Esempi pratici di configurazione</h2>
+                    <div class="steps">
+                        <div class="step"><strong>Scenario rapido.</strong> Se vuoi partire subito, scegli <em>Google Gemini</em>, incolla la chiave generata in Google AI Studio, lascia il modello predefinito e salva. È la strada più semplice per test veloci.</div>
+                        <div class="step"><strong>Scenario professionale.</strong> Se devi lavorare su fascicoli complessi, crea una chiave <em>OpenAI GPT</em>, seleziona un modello più performante e verifica che il campo <em>Base URL</em> sia quello ufficiale del provider.</div>
+                        <div class="step"><strong>Scenario locale.</strong> Se vuoi evitare servizi cloud, avvia <em>Ollama</em> o <em>LM Studio</em> sul tuo computer, imposta la base URL locale e scegli un modello installato sul dispositivo.</div>
+                        <div class="step"><strong>Scenario misto.</strong> Puoi tenere un provider cloud per il lavoro principale e uno locale come piano di riserva, così non resti bloccato se una chiave scade o un servizio è temporaneamente indisponibile.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>FAQ e problemi comuni</h2>
+                    <div class="steps">
+                        <div class="step"><strong>La risposta è vuota.</strong> Controlla provider, chiave, modello selezionato e Base URL. Se usi un servizio locale, verifica che il server sia in esecuzione.</div>
+                        <div class="step"><strong>Ricevo un errore di autorizzazione.</strong> In genere la chiave è errata, scaduta o non abilitata per il piano attivo. Rigenerala dal portale del provider e incollala di nuovo.</div>
+                        <div class="step"><strong>Il provider non compare attivo.</strong> Salva la configurazione con la spunta su <em>Provider Attivo</em> e ricarica la pagina se necessario.</div>
+                        <div class="step"><strong>Il modello non è disponibile.</strong> Alcuni provider espongono modelli diversi in base al piano: prova un modello supportato oppure usa la lista aggiornata dal provider stesso.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a class="btn btn-primary" href="/">Apri LexIA</a>
+                <a class="btn btn-secondary" href="/LexIA/index.html">Vai alla landing</a>
+            </div>
+        </section>
+        <div class="footer">Manuale d'uso ufficiale di LexIA. © 2026 vincenzoricciardi.eu</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexIA | Work in Progress</title>
+    <meta name="description" content="LexIA è in fase di sviluppo: la pagina spiega il progetto e il work in progress, mentre l'accesso alla piattaforma è temporaneamente sospeso.">
+    <meta name="keywords" content="LexIA, work in progress, assistente legale, fascicoli, privacy, sviluppo">
+    <meta name="author" content="Vincenzo Ricciardi">
+    <link rel="canonical" href="https://vincenzoricciardi.eu/LexIA/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vincenzoricciardi.eu/LexIA/">
+    <meta property="og:title" content="LexIA | Work in Progress">
+    <meta property="og:description" content="LexIA è in sviluppo: accesso temporaneamente sospeso mentre il progetto viene riorganizzato in modalità privacy-first.">
+    <meta property="og:image" content="https://vincenzoricciardi.eu/LexIA/lexia-law-preview-v2.jpg">
+    <meta property="og:site_name" content="Vincenzo Ricciardi">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LexIA | Work in Progress">
+    <meta name="twitter:description" content="LexIA è in sviluppo: accesso temporaneamente sospeso mentre il progetto viene riorganizzato in modalità privacy-first.">
+    <meta name="twitter:image" content="https://vincenzoricciardi.eu/LexIA/lexia-law-preview-v2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#050816;
+            --panel:rgba(11,17,33,.76);
+            --stroke:rgba(148,163,184,.14);
+            --text:#e2e8f0;
+            --muted:#94a3b8;
+            --primary:#818cf8;
+            --cyan:#22d3ee;
+            --accent:#a78bfa;
+            --link:#f6c453;
+            --shadow:0 28px 80px rgba(0,0,0,.42);
+        }
+        *{box-sizing:border-box}
+        a:not(.btn){color:var(--link);text-decoration-color:rgba(246,196,83,.55);text-underline-offset:3px}
+        a:not(.btn):hover{color:#ffe08a;text-decoration-color:currentColor}
+        a:not(.btn):focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:3px}
+        html,body{margin:0;min-height:100%;font-family:'Inter',system-ui,sans-serif;background:radial-gradient(circle at top left, rgba(129,140,248,.18), transparent 36%),radial-gradient(circle at top right, rgba(34,211,238,.12), transparent 28%),var(--bg);color:var(--text)}
+        body{padding:32px}
+        .wrap{max-width:1120px;margin:0 auto}
+        .hero{display:grid;grid-template-columns:1.25fr .85fr;gap:24px;align-items:stretch}
+        .panel{background:var(--panel);border:1px solid var(--stroke);backdrop-filter:blur(18px);border-radius:24px;box-shadow:var(--shadow)}
+        .intro{padding:34px}
+        .kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.25);color:#c7d2fe;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+        h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.02;margin:18px 0 14px}
+        .lead{font-size:1.05rem;line-height:1.7;color:var(--muted);max-width:62ch}
+        .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+        .card{padding:18px;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid var(--stroke)}
+        .card h3{margin:0 0 8px;font-size:1rem}
+        .card p{margin:0;color:var(--muted);line-height:1.6;font-size:.96rem}
+        .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+        .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid transparent;transition:.2s ease}
+        .btn-primary{background:linear-gradient(135deg,var(--primary),var(--cyan));color:#fff}
+        .btn-secondary{background:rgba(255,255,255,.04);border-color:var(--stroke);color:var(--text)}
+        .btn:hover{transform:translateY(-1px)}
+        .aside{padding:28px}
+        .aside h2{margin:0 0 14px;font-size:1.2rem}
+        .list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+        .list li{padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.03);border:1px solid var(--stroke);color:var(--muted);line-height:1.55}
+        .list strong{color:var(--text)}
+        .footer{margin-top:18px;color:var(--muted);font-size:.9rem;text-align:center}
+        @media (max-width: 900px){
+            body{padding:18px}
+            .hero{grid-template-columns:1fr}
+            .grid{grid-template-columns:1fr}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section class="hero">
+            <div class="panel intro">
+                <div class="kicker">LexIA - Work in Progress</div>
+                <h1>La piattaforma è temporaneamente in pausa mentre la stiamo riprogettando.</h1>
+                <p class="lead">LexIA sta evolvendo verso un modello privacy-first, con fascicoli e dati personali conservati localmente sul dispositivo dell'utente. L'accesso completo all'app è sospeso durante questa fase di sviluppo.</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Gestione fascicoli</h3>
+                        <p>Archiviazione, note, storico delle conversazioni e organizzazione dei documenti per singolo caso, in modalità locale privata.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Suite investigativa</h3>
+                        <p>Trascrizione audio, ricerche persone e PEC, schede testimoni e generazione documenti operativi, con dati conservati sul dispositivo dell'utente.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Strategia forense</h3>
+                        <p>Analisi con focus su rischi, priorità, azioni consigliate e prossimi passi da intraprendere, con la nuova architettura in corso di definizione.</p>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <span class="btn btn-primary" style="pointer-events:none;opacity:.75;cursor:not-allowed">Accesso temporaneamente sospeso</span>
+                    <a class="btn btn-secondary" href="/applicazioni.html">Torna alle applicazioni</a>
+                </div>
+            </div>
+
+            <aside class="panel aside">
+                <h2>Stato del Progetto</h2>
+                <ul class="list">
+                    <li><strong>1. UI pubblica attiva.</strong> La pagina di presentazione resta disponibile per spiegare LexIA e il suo percorso di sviluppo.</li>
+                    <li><strong>2. Accesso app bloccato.</strong> La vera interfaccia operativa è temporaneamente disabilitata mentre riorganizziamo il flusso dei fascicoli.</li>
+                    <li><strong>3. Privacy first.</strong> I fascicoli saranno pensati per rimanere sul dispositivo dell'utente, non su un archivio centrale.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <div class="footer">LexIA è in fase di sviluppo e revisione architetturale. L'accesso completo all'app verrà riaperto al termine del work in progress.</div>
+    </div>
+</body>
+</html>
