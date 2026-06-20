@@ -26,6 +26,23 @@ The current direction is:
 - explicit privacy-first behavior
 - progressive reduction of duplicated server/browser flows
 
+## Roadmap
+
+### Near term
+
+- stabilize the browser-first runtime
+- reduce duplicated browser/server logic
+- improve test coverage for core workflows
+- harden repository hygiene and contributor safety
+
+### Active priorities
+
+- document upload and editor reliability
+- consultation workflow consistency
+- case/category storage coherence
+- safer configuration and deployment practices
+- clearer contributor onboarding
+
 ## Project structure
 
 - `templates/index.html`: main UI
@@ -81,3 +98,9 @@ See `CONTRIBUTING.md`.
 ## Security
 
 See `SECURITY.md`.
+
+## GitHub workflow
+
+- use Issues for bugs and feature requests
+- keep pull requests focused and reviewable
+- avoid committing secrets, personal data, or local case files
